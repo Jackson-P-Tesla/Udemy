@@ -2,7 +2,7 @@ console.log('hello World');
 
 const country = 'Canada';
 const continent = 'North America';
-let population = 35;
+let population = 15;
 
 console.log(country, continent, population);
 
@@ -54,20 +54,24 @@ if (!isIsland && language == 'English' && population < 50 ){
 }
 
 switch (language){
-    case 'chinese':
-    case 'mandarin':
+    case 'Chinese':
+    case 'Mandarin':
         console.log('Most number of native speakers!');
         break;
-    case 'spanish':
+    case 'Spanish':
         console.log('2nd place in number of native speakers');
         break;
-    case 'english':
+    case 'English':
         console.log('3rd place');
         break;
-    case'hindi':
+    case'Hindi':
         console.log('Number 4');
         break;
-    case 'arabic':
+    case 'Arabic':
         console.log('5th most spoken language');
         break;
 }
+
+console.log(
+    `${country}'s population is ${population > 33 ? 'above' : 'below'} average.`
+)
