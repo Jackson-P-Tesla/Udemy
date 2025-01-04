@@ -75,3 +75,112 @@ switch (language){
 console.log(
     `${country}'s population is ${population > 33 ? 'above' : 'below'} average.`
 )
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('jonas'));
+console.log(Boolean({}));
+
+const money = 100;
+if (money > 0){
+    console.log('you have money');
+} else {
+    console.log('you are broke');
+}
+
+let height;
+if(height){
+    console.log("this is there");
+} else{
+    console.log('no height exists');
+}
+
+const age = 18;
+if (age === 18){
+    console.log('The person has become an adult');
+} else {
+    console.log('')
+}
+
+// const favourite = prompt("what's your favourite number?");
+// console.log(favourite);
+// console.log(typeof favourite);
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive){
+//     console.log('Sarah is able to drive!');
+// } else{
+//     console.log('Someone else should drive...');
+// }
+
+const isTired = false;
+
+console.log(hasDriversLicense || hasGoodVision || isTired);
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+
+if (shouldDrive){
+    console.log('Sarah is able to drive!');
+} else{
+    console.log('Someone else should drive...');
+}
+
+const day = 'thursday';
+
+switch(day) {
+    case 'monday':
+        console.log('Today is Monday');
+        console.log('Go to work');
+        break;
+    case 'tuesday' :
+        console.log('Today is Tuesday');
+        break;
+    case 'wednesday' :
+    case 'thursday' :
+        console.log('Today is Wednesday or Thursday');
+        break;
+    case 'friday':
+        console.log('Today is Friday');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Today is saturday or sunday');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
+
+if (day === 'monday'){
+    console.log('Today is Monday');
+    console.log('Go to work');
+} else if (day === 'tuesday'){
+    console.log('Today is Tuesday');
+}else if (day === 'wednesday' || 'thursday'){
+    console.log('Today is Wednesday or Thursday');
+}else if (day === 'friday'){
+    console.log('Today is Friday');
+}else if (day === 'saturday' || 'sunday'){
+    console.log('Today is saturday or sunday');
+} else {
+    console.log('Not a valid day!');
+}
+
+
+const newAge = 23;
+newAge >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water');
+
+
+const drink = newAge >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+
+console.log(`I linke to drink ${drink}`);
